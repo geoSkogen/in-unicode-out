@@ -22,9 +22,6 @@ body {
   font-size: 56px;
 }
 
-#balloon {
-  height: 16px;;
-}
 
 p.testP {
   margin: 0 1em;
@@ -67,6 +64,13 @@ a:link, a:active, a:hover, a:visited {
   text-decoration: none;
 }
 
+a.ref_link:link, a.ref_link:active, a.ref_link:hover, a.ref_link:visited {
+  color: black;
+  text-decoration: none;
+  opacity: 0.4;
+  font-weight: 800;
+}
+
 button,
 input[type="submit"] {
   color: white;
@@ -99,6 +103,10 @@ input.zeroTestModal {
   margin: 0 0.5em 1em 0;
 }
 
+#in_unicode_out {
+  margin: 0 0 1.5em 0;
+}
+
 .nav_shell {
 
 }
@@ -108,5 +116,5 @@ input.zeroTestModal {
   top: 0;
   text-align: center;
   width: 100%;
-  padding: 0 15% 0 15%;
+  padding: 0 20% 0 20%;
 }
