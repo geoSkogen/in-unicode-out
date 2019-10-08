@@ -9,10 +9,10 @@ body {
   justify-content: center;
 }
 
-.flexOuterCenter {
+.flexOuterCenter_space {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .soup {
@@ -97,4 +97,16 @@ input.zeroTestModal {
 
 .app_link {
   margin: 0 0.5em 1em 0;
+}
+
+.nav_shell {
+
+}
+
+.nav_shell_sticky {
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0 15% 0 15%;
 }

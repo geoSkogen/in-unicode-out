@@ -16,14 +16,20 @@
 <body>
   <header>
     <nav>
-      <div class="flexOuterCenter">
+      <div id="in_unicode_out" class="flexOuterCenter">
         <a href="https://github.com/geoSkogen/csv-schema/tree/htdoc">in/UNICODE/OUT</a>
         <a href="https://github.com/geoSkogen">geoSkogen</a>
       </div>
-      <h1>in/UNICODE/OUT</h1>
       <div class="flexOuterCenter">
-        <a href="#code_to_char" id="code_to_char_link" class="app_link">code in</a>
-        <a href="#char_to_code" id="char_to_code_link" class="app_link">code out</a>
+        <div id="sticky_shell" class="nav_shell">
+          <div id="sticky_nav" class="flexOuterCenter">
+            <a href="#code_to_char" id="code_to_char_link" class="app_link">code in</a>
+            <a href="#char_to_code" id="char_to_code_link" class="app_link">code out</a>
+            <a href="#in_unicode_out" id="in-unicode-out-link" class="apple_link">
+              <h1>in/UNICODE/OUT</h1>
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -88,4 +94,6 @@
 </body>
 <script src="lib/char_control.js"></script>
 <script src="lib/init_charcodes.js"></script>
+<script src="lib/sticky.js"></script>
+
 </html>
