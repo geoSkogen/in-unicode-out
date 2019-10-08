@@ -1,0 +1,100 @@
+
+body {
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+.flexOuterCenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flexOuterCenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.soup {
+  margin: 0.5em;
+  padding: 0.5em;
+  font-weight: 800;
+  font-size: 56px;
+}
+
+#balloon {
+  height: 16px;;
+}
+
+p.testP {
+  margin: 0 1em;
+  padding: 0.5em;
+}
+
+input.zeroTest,
+input.zeroTestModal {
+  margin: 1em;
+  padding: 0.75em;
+  border-radius: 2px;
+  border: 1.33px solid cornflowerblue;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 12px;
+}
+
+h2 {
+  margin: 0.25em 0 0 33%;
+}
+
+@media only screen and (min-width: 420px ) {
+  h2 {
+    margin: 0.25em 0 0 45%;
+  }
+}
+
+a {
+  font-size: 22px;
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+}
+
+a:link, a:active, a:hover, a:visited {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+button,
+input[type="submit"] {
+  color: white;
+  background-color: steelblue;
+  padding: 0.75em;
+  margin: 1em;
+  border-radius: 4px;
+  border: none;
+}
+
+input[type="number"] {
+  width: 36px;
+}
+
+input.zeroTestModal {
+  opacity: 0;
+}
+
+.appWrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.appShell {
+  display: none;
+}
+
+.app_link {
+  margin: 0 0.5em 1em 0;
+}

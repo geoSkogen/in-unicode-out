@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>
+    in/UNICODE/OUT
+  </title>
+
+  <link rel="stylesheet" href="css/yuckstyle.css"/>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="flexOuterCenter">
+        <a href="https://github.com/geoSkogen/csv-schema/tree/htdoc">in/UNICODE/OUT</a>
+        <a href="https://github.com/geoSkogen">geoSkogen</a>
+      </div>
+      <h1>in/UNICODE/OUT</h1>
+      <div class="flexOuterCenter">
+        <a href="#code_to_char" id="code_to_char_link" class="app_link">code in</a>
+        <a href="#char_to_code" id="char_to_code_link" class="app_link">code out</a>
+      </div>
+    </nav>
+  </header>
+  <div id="in-unicode-out" class="appWrapper">
+  <!-- 1 -->
+  <div id="code_to_char" class="app">
+    <h2 id="code_to_char_title" class="app_title">
+      <i id="code_to_char_title_icon" class='fas fa-caret-right' style='font-size:28px'>&nbsp;</i>
+      code in
+    </h2>
+    <div class="appShell">
+      <div class="flexOuterCenter">
+        <input id="code_to_char_in" class="zeroTest" type="text"/>
+      </div>
+      <div class="flexOuterCenter">
+        <div class="relShell">
+          <input id="volume" class="zeroTestModal" type="number"/>
+        </div>
+      </div>
+      <div class="flexOuterCenter">
+        <input id="codetest" class="code_to_char_mode" type="radio" name="code_to_char_mode" value="tester" checked>codetest<br>
+        <input id="decoder" class="code_to_char_mode" type="radio" name="code_to_char_mode" value="composer">composer<br>
+        <input id="randomizer" class="code_to_char_mode" type="radio" name="code_to_char_mode" value="randomizer">randomizer<br>
+      </div>
+      <div class="flexOuterCenter">
+        <button class="go">go</button>
+      </div>
+      <div class="flexOuterCenter">
+        <div id="code_to_char_out" class="soup"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 2 -->
+  <div id="char_to_code" class="app">
+    <h2 id="char_to_code_title" class="app_title">
+      <i id="char_to_code_title_icon" class='fas fa-caret-right' style='font-size:28px'>&nbsp;</i>
+      code out
+    </h2>
+    <div class="appShell">
+      <div class="flexOuterCenter">
+        <input id="char_to_code_in" class="zeroTest" type="text"/>
+      </div>
+      <div class="flexOuterCenter">
+        <div class="relShell">
+          <input id="char_to_code_upload" class="zeroTestModal" type="file" name="chars_in"/>
+        </div>
+      </div>
+      <div class="flexOuterCenter">
+        <input id="chartest" class="char_to_code_mode" type="radio" name="char_to_code_mode" value="tester" checked>chartest<br>
+        <input id="encoder" class="char_to_code_mode" type="radio" name="char_to_code_mode" value="composer">composer<br>
+        <input id="uploader" class="char_to_code_mode" type="radio" name="char_to_code_mode" value="uploader">uploader<br>
+      </div>
+      <div class="flexOuterCenter">
+        <button class="go">go</button>
+      </div>
+      <div class="flexOuterCenter">
+        <div id="char_to_code_out" class="soup"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="lib/char_control.js"></script>
+<script src="lib/init_charcodes.js"></script>
+</html>
